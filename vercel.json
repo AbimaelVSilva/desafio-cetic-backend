@@ -2,7 +2,7 @@
     "version": 2,
     "env":{
         "JWT_SECRET":"8fw1&@q8%Hb63f3TK9",
-        "DATABASE_URL": "postgresql://postgres:123@localhost:5432/ceticdb?schema=public"
+        "DATABASE_URL": "postgresql://postgres:oSPPLUiDR9TDijUhpwb4@containers-us-west-28.railway.app:6383/railway"
     },
     "builds": [
         {
@@ -12,14 +12,8 @@
     ],
     "routes": [
         {
-            "src":"/(.*)",
-            "dest": "src/main.js",
-            "methods": [
-                "GET",
-                "POST",
-                "PUT",
-                "DELETE"
-            ]
+            "src":"(.*)",
+            "dest": "src/main.js"
         }
     ]
 }
