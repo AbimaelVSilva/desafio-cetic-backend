@@ -13,7 +13,7 @@
     "routes": [
         {
             "src":"/(.*)",
-            "doest": "src/main.js",
+            "dest": "src/main.js",
             "methods": [
                 "GET",
                 "POST",
