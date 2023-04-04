@@ -34,13 +34,6 @@ export class TaskController {
   update(@Param('id') id: string, @Body() updateTaskDto: UpdateTaskDto) {
     return this.taskService.update(+id, updateTaskDto);
   }
-  //update(@Param('id') id: string, @Body() updateTaskDto: UpdateTaskDto) {
-  //  return this.taskService.update(+id, updateTaskDto);
-  //}
-  //@Patch(':id')
-  //update(@Param('id') id: string, @Body() updateTaskDto: UpdateTaskDto) {
-  //  return this.taskService.update(+id, updateTaskDto);
-  // }
 
   @Delete(':id')
   remove(@Param('id') id: string) {

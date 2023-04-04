@@ -31,6 +31,17 @@
 ```bash
 $ yarn install
 ```
+## Configurar o banco de dados local
+
+Defina a string de conexão em .env com a chave DATABASE_URL
+
+Execute o seguinte comando
+
+```bash
+
+npx prisma migrate dev --name init
+
+```
 
 ## Running the app
 
