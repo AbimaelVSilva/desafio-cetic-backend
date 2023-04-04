@@ -1,19 +1,19 @@
 {
-    "version": 2,
-    "env":{
-        "JWT_SECRET":"8fw1&@q8%Hb63f3TK9",
-        "DATABASE_URL": "postgresql://postgres:oSPPLUiDR9TDijUhpwb4@containers-us-west-28.railway.app:6383/railway"
-    },
-    "builds": [
-        {
-            "src": "src/main.ts",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src":"(.*)",
-            "dest": "src/main.js"
-        }
-    ]
+  "version": 2,
+  "env": {
+    "JWT_SECRET": "8fw1&@q8%Hb63f3TK9",
+    "DATABASE_URL": "postgresql://postgres:oSPPLUiDR9TDijUhpwb4@containers-us-west-28.railway.app:6383/railway"
+  },
+  "builds": [
+    {
+      "src": "src/main.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "(.*)",
+      "dest": "src/main.js"
+    }
+  ]
 }
